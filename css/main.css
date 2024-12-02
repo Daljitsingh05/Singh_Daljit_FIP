@@ -429,3 +429,37 @@ input, textarea {
   line-height: 18px;
   font-size: 11px;
 }
+#contact-hero_1-con {
+  background-image: url(../images/footer_banner.png);
+  height: 195px;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro h1 {
+  color: #900;
+  font-size: 24px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.activities article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.activities img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
