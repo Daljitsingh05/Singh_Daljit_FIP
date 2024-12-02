@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
 }
 
 header {
@@ -22,82 +23,66 @@ header .logo h1 {
 
 header .navigation ul {
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 header .navigation ul li {
-    margin-left: 20px;
+    margin: 0 15px;
 }
 
 header .navigation ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
+}
+
+header .book-now {
+    background-color: #a00;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
     text-align: center;
-    position: relative;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
-    border-radius: 10px;
+    background: #f4f4f4;
 }
 
-.check-availability {
-    margin-top: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 15px 20px;
+.hero img {
+    max-width: 100%;
     border-radius: 8px;
+    margin-top: 10px;
 }
 
-.check-availability form label {
-    display: block;
-    margin: 5px 0;
-}
-
-.check-availability form input,
-.check-availability form button {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-}
-
-.features {
+.activities {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
     padding: 20px;
-    background-color: #f4f4f4;
 }
 
-.features .feature-item {
+.activity {
     flex: 1;
-    margin: 10px;
+    min-width: 250px;
     text-align: center;
+    background: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.features .feature-item img {
+.activity img {
     max-width: 100%;
     border-radius: 8px;
 }
 
-.faq {
-    padding: 20px;
-    background-color: #fafafa;
-}
-
 .contact {
     padding: 20px;
+    background: #f4f4f4;
     text-align: center;
 }
 
@@ -106,18 +91,28 @@ header .navigation ul li a {
     margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .contact form label {
-    margin: 10px 0 5px;
+    text-align: left;
+    font-weight: bold;
 }
 
 .contact form input,
 .contact form textarea,
 .contact form button {
-    padding: 10px;
-    margin-bottom: 10px;
     width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #a00;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 footer {
@@ -125,4 +120,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: 20px;
 }
