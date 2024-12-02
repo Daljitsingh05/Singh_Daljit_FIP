@@ -463,3 +463,8 @@ input, textarea {
   max-width: 300px;
   margin-bottom: 10px;
 }
+
+#hero {
+  background-image: url(../images/crfl12.png);
+  height: 195px;
+}
